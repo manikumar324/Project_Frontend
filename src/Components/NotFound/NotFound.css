@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Notfound-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height:100vh;
+}
+.set-notfound{
+    height:450px;
+    width:450px;
+}

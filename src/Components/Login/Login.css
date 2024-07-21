@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.login-head{
+    color:white;
+  font-weight: 600;
+  padding: 10px;  
+}
+.login-total-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to left,violet,aqua); */
+    background-image: url("https://thumbs.dreamstime.com/b/top-view-continental-breakfast-croissants-fried-eggs-orange-juice-coffee-cheese-wooden-background-150876884.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.login-inner-container{
+    background-color: transparent;
+    width:400px;
+    margin: 100px;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+}
+.login-from{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-icon{
+    height:50px;
+    /* background-color: white; */
+    margin-right: 10px;
+    font-size: 33px;
+    border-radius: 16px;
+    color:white;
+    
+}
+.login-logo{
+    font-size: 100px;
+    color:white;
+    margin-top: -58px;
+    
+}
+.login-inner-one{
+    height:45px;
+    width:300px;
+    border:none;
+    outline:none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.login-inner-button{
+    height:45px;
+    width:300px;
+    border:none;
+    outline:none;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-left: 40px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+    background-color: rgb(241, 162, 15);
+}
+.login-inner-button:hover{
+    transform: scale(1.1);
+    background-color: aquamarine;
+}
+.login-third{
+    margin-top: 40px;
+}
+input::placeholder{
+    margin-left: 10px;
+}
+input{
+    text-indent: 15px;    /*to adjust the placeholdeer in input */
+}
+.check-box{
+    margin-right: 120px;
+    display: flex;
+}
+
+#check{
+    /* margin-right: 5px; */
+    outline-color: whitesmoke;
+}
+.forgot{
+    text-decoration: none;
+    margin-left: 175px;
+    font-size: 15px;
+    outline-color: whitesmoke;
+    color: white;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.last-one{
+    display: flex;
+    margin-top: 20px;
+}
+.create-link{
+    text-decoration: none;
+    margin-left: 3px;
+    font-size: 18px;
+    font-family: Monoton;
+    color: white;
+}
+.create-link:hover{
+    text-decoration: underline;
+}
+.last-para{
+    font-size: 16px;
+    font-family: Monoton;
+    color: red;
+}
+.remember{
+    color: white;
+    font-family:Monoton;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .login-total-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image: linear-gradient(to left,violet,aqua); */
+        background-image: url("https://thumbs.dreamstime.com/b/top-view-continental-breakfast-croissants-fried-eggs-orange-juice-coffee-cheese-wooden-background-150876884.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .login-inner-container{
+        background-color: transparent;
+        width:400px;
+        /* margin: 100px; */
+        padding: 10px;
+        /* border: 2px solid whitesmoke; */
+    }
+    .login-icon{
+        height:28px;
+        /* background-color: white; */
+        margin-right: 10px;
+        font-size: 33px;
+        border-radius: 16px;
+        color:white;
+        
+    }
+    .login-inner-one{
+        height:38px;
+        width:230px;
+        border:none;
+        outline:none;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .login-inner-button{
+        height:38px;
+        width:250px;
+        border:none;
+        outline:none;
+        border-radius: 25px;
+        margin-bottom: 5px;
+        padding: 10px;
+        margin-left: 30px;
+        font-weight: 600;
+        transition: all 0.4s linear;
+        background-color: rgb(241, 162, 15);
+    }
+    .remember{
+        color: white;
+        font-family:Monoton;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .forgot{
+       text-decoration: none;
+       margin-left: 130px;
+        outline-color: whitesmoke;
+        font-size: 14px;
+        color: white;
+    }
+    .forgot:hover{
+       
+        text-decoration:underline;
+    }
+    .create-link{
+        color: white;
+    }
+    .create-link:hover{
+        text-decoration: underline;
+    }
+    .check-box{
+        margin: 0px 46px;
+        display: flex;
+    }
+    .last-para{
+        color: red;
+    }
+}

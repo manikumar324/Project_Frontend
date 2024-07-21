@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.loader{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader-image{
+    height:150px;
+    width:200px;
+}
+.Recipes-menu-title{
+    background-image: url("https://scottscountrykitchen.ca/wp-content/uploads/2015/07/Table-and-ingredients-1024x640.jpg");
+    background-size: cover;
+    height:400px;
+    width: 100%;
+}
+.menu-title{
+    color:whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 150px;
+    padding-right: 30px;
+    width:100%;
+    font-size: 40px;
+    font-weight:bolder;
+    font-family: cursive;
+}
+
+.set-menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#fae38c,#fff8db);
+}
+
+@media (max-width:767px) {
+    .Recipes-menu-title{
+        background-image: url("https://scottscountrykitchen.ca/wp-content/uploads/2015/07/Table-and-ingredients-1024x640.jpg");
+        background-size: cover;
+        height:350px;
+        width: 100%;
+    }
+    .menu-title{
+        color:rgb(95, 206, 101);
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 150px;
+        padding-right: 30px;
+        width:100%;
+        font-size: 40px;
+        font-weight:bolder;
+        font-family: cursive;
+        position: relative;
+        animation: scroll 3s infinite;
+    }
+    @keyframes scroll {
+        0% {
+            top: 50px;
+        }
+        100% {
+            top:100px; /* Adjust as needed */
+        }
+       
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .Recipes-menu-title{
+        background-image: url("https://scottscountrykitchen.ca/wp-content/uploads/2015/07/Table-and-ingredients-1024x640.jpg");
+        background-size: cover;
+        height:350px;
+        width: 100%;
+    }
+    .menu-title{
+        color:rgb(95, 206, 101);
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 150px;
+        padding-right: 30px;
+        width:100%;
+        font-size: 40px;
+        font-weight:bolder;
+        font-family: cursive;
+        position: relative;
+        animation: scroll 3s infinite;
+    }
+    @keyframes scroll {
+        0% {
+            top: 50px;
+        }
+        100% {
+            top:100px; /* Adjust as needed */
+        }
+       
+    }
+}

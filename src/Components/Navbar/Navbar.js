@@ -32,7 +32,7 @@ const NAVBAR = () => {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-      navigate("/", { replace: true });
+      navigate("/Home", { replace: true });
     }, 2000);
   };
   const navRef=useRef();

@@ -65,7 +65,7 @@ const Login = () => {
     setLoginSuccessful(false)
     setData({mail:"",password:""})
    setTimeout(()=>{
-    navigate("/",{replace:true})
+    navigate("/Home",{replace:true})
    },1500)
     setLoginFailure(false)
   }

@@ -14,7 +14,7 @@ const DosaMenu = () => {
         const getCardData=async()=>{
            setTimeout(async()=>{
             try{
-                const response=await fetch(`https://food-project-backend-e69n.onrender.com/${itemId}`)
+                const response=await fetch(`https://food-project-backend-e69n.onrender.com/recipeslist/${itemId}`)
                 const data=await response.json()
                 console.log(data)
                 if(response.ok === true){

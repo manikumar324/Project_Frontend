@@ -54,7 +54,7 @@ const OrderForm = () => {
       },
       body:JSON.stringify({name,number,address,pincode})
     };
-    const Order_URL="https://food-project-backend-e69n.onrender.com";
+    const Order_URL="https://food-project-backend-e69n.onrender.com/order-details-list";
     try{
         const response=await fetch(Order_URL,options)
         const data=await response.json();
@@ -67,7 +67,7 @@ const OrderForm = () => {
         setTimeout(()=>{
         setShow(false)
         setTimeout(()=>{
-          navigate("/",{return:true})
+          navigate("/Home",{return:true})
         },2000)
       },3000)
       setItem({name:"",number:"",address:"",pincode:""})

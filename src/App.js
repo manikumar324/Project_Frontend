@@ -16,9 +16,9 @@ const App = () => {
      <div>
         <BrowserRouter>
           <Routes>
-            <Route exact path='/' element={<Home />}/>
+            <Route exact path='/Home' element={<Home />}/>
             <Route exact path='/user-login' element={<Login />}/>
-            <Route exact path='/new-user-signup' element={<SignUp />}/>
+            <Route exact path='/' element={<SignUp />}/>
             <Route exact path="/recipes/menu-list" element={<Recipes />}/>
             <Route exact path='/user-change-password' element={<UpdatePassword />}/>
             <Route exact path='/recipes-about-section' element={<About />}/>

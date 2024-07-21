@@ -54,7 +54,7 @@ const OrderForm = () => {
       },
       body:JSON.stringify({name,number,address,pincode})
     };
-    const Order_URL="https://food-project-backend-e69n.onrender.com/";
+    const Order_URL="https://food-project-backend-e69n.onrender.com";
     try{
         const response=await fetch(Order_URL,options)
         const data=await response.json();

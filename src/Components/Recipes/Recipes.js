@@ -24,7 +24,7 @@ const Recipes = () => {
     const fetchData=async()=>{
         setTimeout(async ()=>{
           try{
-            const response=await fetch("https://food-project-backend-e69n.onrender.com/")
+            const response=await fetch("https://food-project-backend-e69n.onrender.com")
             const value=await response.json()
             if(response.ok === true){
                 setRecipeData(value)

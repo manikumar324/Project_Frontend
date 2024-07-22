@@ -62,12 +62,9 @@
     margin: 5px 2px;
     color: black;
  }
-@media (min-width:500px)and(max-width:660px) {
-    /* .total-order-form-container{
-        background-color: whitesmoke;
-    } */
+@media (max-width:767px){
     .order-form-container{
-        height: 75vh;
+        height: 70vh;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -85,7 +82,7 @@
     
     }
     .form-control{
-        width: 300px;
+        width: 200px;
     }
     .order-form-buttons{
         display: flex;

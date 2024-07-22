@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
     .about-banner-background{
         background-color: antiquewhite;
         /* margin: 20px; */
@@ -187,7 +186,7 @@
     .set-video{
         height:220px;
         width:100px;
-        padding: 50px;
+        padding: 30px;
     }
     .about-headings{
         padding: 0px 30px;
@@ -233,8 +232,9 @@
     .choose-one{
         display: flex;
         flex-direction: column;
+        justify-content:center;
         align-items: center;
-        width: 350px;
+        width: 280px;
         background-color:white;
         border-style:solid;
         border-width:1px;
@@ -244,14 +244,14 @@
         margin-bottom: 5px;
     }
     .choose-head{
-        font-size:20px;
+        font-size:18px;
         font-weight:800;
         color:black;
         font-family:normal;
         padding-top: 5px;
     }
     .choose-para{
-        font-size:15px;
+        font-size:14px;
         font-weight:normal;
         color:black;
         font-family:cursive;
@@ -278,19 +278,19 @@
     .about-search-container{
         height: 200px;
         background-image: linear-gradient(aqua,violet);
-        margin: 25px;
+        margin: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
     .search-input {
-        padding: 10px;
+        padding: 2px;
         border: 1px solid #ccc;
         border-radius: 4px 0 0 4px;
         border: none;
         outline: none;
-        width:250px;
+        width:160px;
       }
       .search-button {
         padding: 8px;
@@ -303,7 +303,7 @@
       .offers-para{
         font-weight: 600;
        font-family: cursive;
-       font-size: 25px;
+       font-size: 20px;
        text-align: center;
       }
       .sub-con{
@@ -318,157 +318,6 @@
       .set-gif{
         height: 200px;
         width: 200px;
-      }
-      .set-thanks{
-        margin-top: 25px;
-        font-size: 20px;
-        font-weight: 700;
-      }
-  }
-
-  @media (min-width:768px) and (max-width:1023px) {
-    .about-para-section{
-        display: block;
-    }
-    .about-banner{
-        height:420px;
-        width:100%;
-        padding: 50px;
-    }
-    .about-para-section{
-        display: block;
-        padding: 10px;
-    }
-    .set-video{
-        height:220px;
-        width:100px;
-        padding: 50px;
-    }
-    .about-headings{
-        padding: 5px 30px;
-        width:550px;
-    }
-    .about-video{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-     }
-     .total-wcu-section{
-        background-image: linear-gradient(to right,#fff8db,#fae38c);
-        padding: 20px;
-    }
-    .choose-main-head{
-        text-align: center;
-        font-size: 28px;
-        font-weight: 800;
-        /* padding: 15px; */
-    }
-    .about-head{
-        font-size: 25px;
-        font-weight: 800;
-        font-family: cursive;
-    }
-    .about-para{
-        font-size: 18px;
-        color: rgb(75, 68, 68);
-        font-family: monospace;
-    }
-    .choose-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        
-    }
-    .choose-one{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 350px;
-        background-color:white;
-        border-style:solid;
-        border-width:1px;
-        border-radius:10px;
-        border-color:#e5eaf4;
-        padding: 20px;
-        margin-bottom: 5px;
-    }
-    .choose-head{
-        font-size:20px;
-        font-weight:800;
-        color:black;
-        font-family:normal;
-        padding-top: 5px;
-    }
-    .choose-para{
-        font-size:15px;
-        font-weight:normal;
-        color:black;
-        font-family:cursive;
-    }
-    .offers{
-        font-style:italic;
-        font-weight:bold;
-    }
-    .about-card{
-        background-image: linear-gradient(to right,blue,violet);
-        height: 200px;
-        margin: 30px;
-    }
-    .about-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 450px;
-        height: 200px;
-        border: 1px solid red;
-        
-    }
-    .about-search-container{
-        height: 200px;
-        background-image: linear-gradient(aqua,violet);
-        margin: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .search-input {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px 0 0 4px;
-        border: none;
-        outline: none;
-        width:250px;
-      }
-      .search-button {
-        padding: 8px;
-        background-color: #007bff;
-        color: #fff;
-        border: 1px solid #007bff;
-        border-radius: 0 4px 4px 0;
-        cursor: pointer;
-      }
-      .offers-para{
-        font-weight: 600;
-       font-family: cursive;
-       font-size: 25px;
-       text-align: center;
-      }
-      .sub-con{
-        margin: 10px;
-        height: 300px;
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-      }
-      .set-gif{
-        height: 200px;
-        width: 400px;
       }
       .set-thanks{
         margin-top: 25px;

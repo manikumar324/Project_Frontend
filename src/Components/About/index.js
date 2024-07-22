@@ -76,8 +76,8 @@ const About = () => {
           <div className='choose-one'>
               <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" alt="food-service" />
               <h1 className='choose-head'>Best Offer's</h1>
-              <p class = "choose-para"> Food Coupons & Offers upto
-                  <span class="offers"> 50% OFF </span>
+              <p className = "choose-para"> Food Coupons & Offers upto
+                  <span className="offers"> 50% OFF </span>
                     and Exclusive Promo Codes on All Online Food Orders.</p>
           </div>
         </div>

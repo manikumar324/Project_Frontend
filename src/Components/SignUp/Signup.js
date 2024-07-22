@@ -63,7 +63,7 @@ const submitHandler=async (event)=>{
     };
 
     try{
-        const response=await fetch("https://food-project-backend-e69n.onrender.com/",options)
+        const response=await fetch("https://food-project-backend-e69n.onrender.com/signup",options)
         const data=await response.json()
         if(response.ok === true){
             console.log(data)

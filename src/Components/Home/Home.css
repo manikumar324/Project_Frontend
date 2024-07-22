@@ -104,8 +104,17 @@
         flex-direction: column;
     }
     .set-home-para{
+        width: 300px;
+        margin-left: 1px;
         display:flex;
         flex-direction: column;
+    }
+    .set-breakfast,.set-burger,.set-chicken,.set-fish,.set-pizza{
+        border-radius: 15px;
+        height:300px;
+       width:300px;
+       /* margin: 45px 0px; */
+       padding: 10px;
     }
     .explore-button-2{
         height:40px;

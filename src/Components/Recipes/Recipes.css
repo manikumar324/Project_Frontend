@@ -35,7 +35,7 @@
 
 .set-menu-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-image: linear-gradient(#fae38c,#fff8db);
 }

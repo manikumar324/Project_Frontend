@@ -90,7 +90,7 @@
         align-items: center;
         justify-content: center;
         background-color: white;
-        width:180px;
+        width:160px;
         margin-top:30px;
         margin-bottom: 15px;
         border-radius: 25px;
@@ -99,20 +99,20 @@
     .set-recipe-item{
         padding: 10px;
         height:130px;
-        width: 170px;
+        width: 160px;
         border-radius: 25px;
     }
     .recipe-heart-like{
         color:white;
-        font-size: 25px;
-        margin-left: 140px;
+        font-size: 20px;
+        margin-left: 130px;
         margin-top: 5px;
         color:rgb(255, 0, 81);
     }
     .recipe-heart-dislike{
         color:white;
-        font-size: 25px;
-        margin-left: 140px;
+        font-size: 20px;
+        margin-left: 130px;
         margin-top: 5px;
         color:rgb(207, 201, 201);
     }
@@ -125,7 +125,7 @@
     }
     .recipe-menu-item{
         margin-left: 15px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 800;
     }
 }

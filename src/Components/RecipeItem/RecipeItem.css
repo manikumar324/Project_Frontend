@@ -90,7 +90,7 @@
         align-items: center;
         justify-content: center;
         background-color: white;
-        width:200px;
+        width:180px;
         margin-top:30px;
         margin-bottom: 15px;
         border-radius: 25px;
@@ -98,21 +98,21 @@
     }
     .set-recipe-item{
         padding: 10px;
-        height:150px;
-        width: 200px;
+        height:130px;
+        width: 170px;
         border-radius: 25px;
     }
     .recipe-heart-like{
         color:white;
         font-size: 25px;
-        margin-left: 160px;
+        margin-left: 140px;
         margin-top: 5px;
         color:rgb(255, 0, 81);
     }
     .recipe-heart-dislike{
         color:white;
         font-size: 25px;
-        margin-left: 160px;
+        margin-left: 140px;
         margin-top: 5px;
         color:rgb(207, 201, 201);
     }

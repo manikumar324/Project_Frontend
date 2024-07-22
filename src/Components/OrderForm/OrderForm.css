@@ -64,7 +64,7 @@
  }
 @media (max-width:767px){
     .order-form-container{
-        height: 65vh;
+        height: 60vh;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -82,7 +82,7 @@
     
     }
     .form-control{
-        width: 210px;
+        width: 220px;
     }
     .order-form-buttons{
         display: flex;

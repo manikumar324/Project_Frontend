@@ -11,7 +11,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
     font-size: 14px;
     color: #e5e5e5;
     /* background-image: linear-gradient(180deg,rgba(0,0,0,0.7) 10%,transparent); */
@@ -83,7 +83,11 @@
   /* Small screens (phones) */
   @media (max-width: 480px) {
     .navbar-container {
+      overflow-x: hidden;
       padding: 0.5rem;
+    }
+    .navbar-toggle{
+      font-size: 14px;
     }
     .nav-logo {
       font-size: 16px;

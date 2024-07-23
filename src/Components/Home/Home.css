@@ -13,7 +13,7 @@
     font-family: cursive;
     font-weight: 600;
     font-size: 35px;
-    /* margin-top: -30px; */
+    
 }
 .explore-button-1{
     height:40px;
@@ -24,7 +24,6 @@
     color:white;
     font-weight: 600;
     font-size: 20px;
-    /* background-image: linear-gradient(to left,rgb(89, 155, 89),rgb(104, 104, 160)); */
     background-color: orange;
     animation: beat 0.5s infinite alternate;
 }
@@ -43,51 +42,19 @@
     align-items: center;
     padding: 45px 0px;
     background-image: linear-gradient(to right,rgb(109, 255, 255),rgb(230, 136, 230));
-    /* background-image: url("https://th.bing.com/th/id/OIP.cmUbqpk1Udke_mPzdSn99gHaEw?rs=1&pid=ImgDetMain");
-    background-size: cover; */
 }
 
 .total-carousal-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:500px;
+    width:300px;
     padding: 50px;
-    
 }
-.set-pizza{
+.set-pizza,.set-breakfast,.set-fish,.set-chicken,.set-burger{
     border-radius: 20px;
    height:375px;
    width:375px;
-   /* margin: 45px 0px; */
-   padding: 10px;
-}
-.set-breakfast{
-    border-radius: 20px;
-    height:375px;
-    width:375px;
-    /* margin: 45px 0px; */
-    padding: 10px;
-}
-.set-fish{
-    border-radius: 20px;
-    height:375px;
-   width:375px;
-   /* margin: 45px 0px; */
-   padding: 10px;
-}
-.set-chicken{
-    border-radius: 20px;
-    height:375px;
-   width:375px;
-   /* margin: 45px 0px; */
-   padding: 10px;
-}
-.set-burger{
-    border-radius: 15px;
-    height:375px;
-   width:375px;
-   /* margin: 45px 0px; */
    padding: 10px;
 }
 .set-logo{
@@ -112,7 +79,6 @@
         border-radius: 15px;
         height:300px;
        width:300px;
-       /* margin: 45px 0px; */
        padding: 10px;
     }
     .explore-button-2{
@@ -124,7 +90,6 @@
         color:white;
         font-weight: 600;
         font-size: 20px;
-        /* background-image: linear-gradient(to left,rgb(89, 155, 89),rgb(104, 104, 160)); */
         background-color: orange;
         animation: beat 0.5s infinite alternate;
     }

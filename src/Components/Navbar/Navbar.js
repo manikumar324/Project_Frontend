@@ -1,4 +1,5 @@
-import React, { useState,useEffect,useRef } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import Cookies from 'js-cookie';
 import Loader from 'react-loader-spinner';
@@ -24,7 +25,15 @@ const NAVBAR = () => {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-      navigate("/recipes/about", { replace: true });
+      navigate("/recipes-about-section", { replace: true });
+    }, 2000);
+  };
+
+  const recipes = () => {
+    setLoad(true);
+    setTimeout(() => {
+      setLoad(false);
+      navigate("/recipes/menu-list", { replace: true });
     }, 2000);
   };
 
@@ -32,16 +41,16 @@ const NAVBAR = () => {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-      navigate("/home", { replace: true });
+      navigate("/Home", { replace: true });
     }, 2000);
   };
-  const navRef=useRef();
+  const navRef = useRef();
 
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-        navRef.current?.classList.toggle("nav-dark", window.scrollY >= 80);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      navRef.current?.classList.toggle("nav-dark", window.scrollY >= 80);
     })
-},[])
+  }, [])
 
   return (
     <Navbar className="navbar-container" expand="lg" ref={navRef}>
@@ -49,13 +58,13 @@ const NAVBAR = () => {
         <Navbar.Brand href="/" className="nav-logo">
           <img src='https://wallpapercave.com/wp/wp10322952.jpg' className="set-nav-logo" alt='nav-logo' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbar-toggle'/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbar-toggle' />
         <Navbar.Collapse id="basic-navbar-nav">
           {load ? <Loader type="ThreeDots" height={50} width={100} color={"white"} /> : ""}
           <Nav className="nav-links-setting">
             <Nav.Link className="nav-link-one" onClick={home}>Home</Nav.Link>
-            <Nav.Link className="nav-link-one" href="/recipes-about-section" onClick={about}>About</Nav.Link>
-            <Nav.Link className="nav-link-one" href="/recipes/menu-list">Recipes</Nav.Link>
+            <Nav.Link className="nav-link-one" onClick={about}>About</Nav.Link>
+            <Nav.Link className="nav-link-one" onClick={recipes}>Recipes</Nav.Link>
             <Nav.Link className="nav-link-one" onClick={logOut}>Logout</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -65,3 +74,4 @@ const NAVBAR = () => {
 }
 
 export default NAVBAR;
+

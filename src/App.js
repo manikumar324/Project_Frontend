@@ -1,8 +1,8 @@
 
 import React from "react";
 import {
-RouterProvider,
-createBrowserRouter,
+  RouterProvider,
+  createBrowserRouter,
 } from "react-router-dom";
 import Login from "./Components/Login/Login";
 import Home from "./Components/Home/Home";
@@ -15,49 +15,49 @@ import NotFound from "./Components/NotFound/NotFound";
 import OrderForm from "./Components/OrderForm/OrderForm";
 
 const App = () => {
-const router = createBrowserRouter([
-{
-path: "/Home",
-element: <Home />,
-},
-{
-path: "/user-login",
-element: <Login />,
-},
-{
-path: "/",
-element: <SignUp />,
-},
-{
-path: "/recipes/menu-list",
-element: <Recipes />,
-},
-{
-path: "/recipes-about-section",
-element: <About />,
-},
-{
-path: "/user-change-password",
-element: <UpdatePassword />,
-},
-{
-path: "/recipeslist/:itemId",
-element: <DosaMenu />,
-},
-{
-path: "/item-order-form",
-element: <OrderForm />,
-},
-{
-path: "*",
-element: <NotFound />,
-},
-]);
-return (
-<div>
-<RouterProvider router={router} />
-</div>
-);
+  const router = createBrowserRouter([
+    {
+      path: "/Home",
+      element: <Home />,
+    },
+    {
+      path: "/user-login",
+      element: <Login />,
+    },
+    {
+      path: "/",
+      element: <SignUp />,
+    },
+    {
+      path: "/recipes/menu-list",
+      element: <Recipes />,
+    },
+    {
+      path: "/recipes-about-section",
+      element: <About />,
+    },
+    {
+      path: "/user-change-password",
+      element: <UpdatePassword />,
+    },
+    {
+      path: "/recipeslist/:itemId",
+      element: <DosaMenu />,
+    },
+    {
+      path: "/item-order-form",
+      element: <OrderForm />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+  ]);
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
 };
 
 export default App;

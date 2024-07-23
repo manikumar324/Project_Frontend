@@ -148,9 +148,19 @@
     }
     .insta-icon,.link-icon,.face-icon,.twi-icon{
         color:white;
-        font-size: 20px;
+        font-size: 18px;
     }
     .footer-icons{
         display: flex;
+    }
+    .footer-inner-last{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-span{
+        margin-top: 19px;
+        color:rgb(200, 192, 192);
+        font-size: 15px;
+        font-weight: 800;
     }
 }

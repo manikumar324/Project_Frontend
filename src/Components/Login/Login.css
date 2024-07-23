@@ -176,7 +176,7 @@ input{
         color: white;
         font-family:Monoton;
         cursor: pointer;
-        font-size: 15px;
+        font-size: 12px;
     }
     .forgot{
        text-decoration: none;
@@ -201,5 +201,12 @@ input{
     }
     .last-para{
         color: red;
+    }
+    .create-link{
+        text-decoration: none;
+        margin-left: 1px;
+        font-size: 14px;
+        font-family: Monoton;
+        color: white;
     }
 }

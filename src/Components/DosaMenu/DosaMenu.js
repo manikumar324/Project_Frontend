@@ -48,7 +48,10 @@ const DosaMenu = () => {
         (
             <div>
                 {menuList.length === 0 ? (
-                    <p>No Items Found .....</p>
+                    <div className='updation-item-container'>
+                        <Link to={"/recipes/menu-list"}><IoArrowBackCircleSharp className='back-icon'/></Link>
+                        <div className='updation-item'>Updation Of Items in PROGRESS......</div>
+                    </div>
                 ) : (
                     <div className='total-icon-container'>
                         <Link to={"/recipes/menu-list"}><IoArrowBackCircleSharp className='back-icon'/></Link>

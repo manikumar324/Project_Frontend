@@ -50,6 +50,7 @@
     align-items: center;
     width:300px;
     padding: 50px;
+    /* margin-top: -70px; */
 }
 .set-pizza,.set-breakfast,.set-fish,.set-chicken,.set-burger{
     border-radius: 20px;
@@ -68,6 +69,7 @@
     .set-carousal{
         display: flex;
         flex-direction: column;
+        padding: 55px 0px;
     }
     .set-home-para{
         width: 300px;
@@ -92,6 +94,9 @@
         font-size: 20px;
         background-color: orange;
         animation: beat 0.5s infinite alternate;
+    }
+    .total-carousal-container{
+        margin-top: -50px;
     }
     .explore-button-1{
         display: none;

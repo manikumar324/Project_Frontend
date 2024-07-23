@@ -8,6 +8,7 @@ import { FaRupeeSign } from "react-icons/fa";
 import {Toaster, toast} from 'react-hot-toast';
 
 
+
 const RecipeItem = ({recipe}) => {
   const{imageUrl,name,rating,price,itemId}=recipe;
   const[color,setColor]=useState(false)

@@ -6,7 +6,7 @@
 
     .about-banner-background{
         background-color: antiquewhite;
-        /* margin: 20px; */
+        padding: 30px 0px;
     }
     .about-banner{
         height:420px;
@@ -203,9 +203,8 @@
     }
     .choose-main-head{
         text-align: center;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 800;
-        /* padding: 15px; */
     }
     .about-headings{
         padding: 30px;
@@ -301,9 +300,9 @@
         cursor: pointer;
       }
       .offers-para{
-        font-weight: 600;
+        font-weight: 800;
        font-family: cursive;
-       font-size: 20px;
+       font-size: 22px;
        text-align: center;
       }
       .sub-con{

@@ -23,6 +23,16 @@
    margin: 5px 2px;
    color: black;
 }
+.updation-item-container{
+    background-color: #fae38c;
+    
+}
+.updation-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 @media (max-width:767px) {
     .back-icon{

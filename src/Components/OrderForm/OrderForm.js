@@ -68,8 +68,8 @@ const OrderForm = () => {
         setShow(false)
         setTimeout(()=>{
           navigate("/Home",{return:true})
-        },2000)
-      },3000)
+        },1500)
+      },5000)
       setItem({name:"",number:"",address:"",pincode:""})
         }
         else{

@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <NAVBAR />
+      <NAVBAR className="position:fixed"/>
       <div className="set-carousal">
           <div className="set-home-para">
             <h3 className="home-para">Experience the real taste of food with FRIENDS 

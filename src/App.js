@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './Components/Login/Login';
 import Home from './Components/Home/Home';
 import SignUp from './Components/SignUp/Signup';
@@ -10,26 +10,24 @@ import About from './Components/About';
 import NotFound from './Components/NotFound/NotFound';
 import OrderForm from './Components/OrderForm/OrderForm';
 
-
 const App = () => {
   return (
-     <div>
-        <BrowserRouter>
-          <Routes>
-            <Route exact path='/Home' element={<Home />}/>
-            <Route exact path='/user-login' element={<Login />}/>
-            <Route exact path='/' element={<SignUp />}/>
-            <Route exact path="/recipes/menu-list" element={<Recipes />}/>
-            <Route exact path='/user-change-password' element={<UpdatePassword />}/>
-            <Route exact path='/recipes-about-section' element={<About />}/>
-            <Route exact path='/recipeslist/:itemId' element={<DosaMenu />}/>
-            <Route exact path='/item-order-form' element={<OrderForm />}/>
-            <Route path='*' element={<NotFound />}/>
-          </Routes>
-      </BrowserRouter>
-     </div>
-    
-  )
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/user-login' element={<Login />} />
+          <Route path='/' element={<SignUp />} />
+          <Route path='/recipes/menu-list' element={<Recipes />} />
+          <Route path='/user-change-password' element={<UpdatePassword />} />
+          <Route path='/recipes-about-section' element={<About />} />
+          <Route path='/recipeslist/:itemId' element={<DosaMenu />} />
+          <Route path='/item-order-form' element={<OrderForm />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
 export default App;

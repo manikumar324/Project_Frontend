@@ -49,14 +49,14 @@ const Footer = () => {
               <p className="icon-two"> +91 630 - 258 - 5352</p>
             </div>
             <div className="footer-three-inner-three">
-              <MdOutlineMailOutline className="home-icon"/>
-              <p className="icon-three">friendsrestaurent29@gmail.com</p>
+              <MdOutlineMailOutline className="home-icon-last"/>
+              <p className="icon-three">friendsrestaurant29@gmail.com</p>
             </div>
         </div>
       </div>
       <div className="footer-last-container">
         <div className="footer-inner-last">
-          <p className="footer-last-para">&copy; 2024 Copyright : <span className="footer-span">friends_restaurent.com</span></p>
+          <p className="footer-last-para">&copy; 2024 Copyright : <span className="footer-span">friends_restaurant.com</span></p>
           <div className="footer-icons">
             <Link to="https://instagram.com/mani_kumar_17?igshid=MzNlNGNkZWQ4Mg==" target="_blank" className="insta-icon"><FaInstagram /></Link>
             <Link to="https://www.linkedin.com/in/manikumar-nakka-541b99253" target="_blank" className="link-icon"><FaLinkedinIn /></Link>

@@ -6,8 +6,8 @@
 }
 .login-head{
     color:white;
-  font-weight: 600;
-  padding: 10px;  
+  font-weight: 800;
+  padding: 15px;  
 }
 .login-total-container{
     display: flex;
@@ -69,7 +69,6 @@
     background-color: rgb(241, 162, 15);
 }
 .login-inner-button:hover{
-    transform: scale(1.1);
     background-color: aquamarine;
 }
 .login-third{
@@ -136,7 +135,7 @@ input{
     }
     .login-inner-container{
         background-color: transparent;
-        width:400px;
+        width:300px;
         /* margin: 100px; */
         padding: 10px;
         /* border: 2px solid whitesmoke; */
@@ -177,10 +176,11 @@ input{
         font-family:Monoton;
         cursor: pointer;
         font-size: 12px;
+        font-weight: 800;
     }
     .forgot{
        text-decoration: none;
-       margin-left: 130px;
+       margin-left: 110px;
         outline-color: whitesmoke;
         font-size: 14px;
         color: white;
@@ -190,6 +190,9 @@ input{
         text-decoration:underline;
     }
     .create-link{
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Monoton;
         color: white;
     }
     .create-link:hover{
@@ -200,6 +203,8 @@ input{
         display: flex;
     }
     .last-para{
+        font-size: 12px;
+        font-family: Monoton;
         color: red;
     }
     .create-link{

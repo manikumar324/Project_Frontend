@@ -5,8 +5,8 @@
     font-family: sans-serif;
 }
 .signup-head{
-  font-weight: 600;
-  padding: 10px;
+  font-weight: 800;
+  padding: 15px;
   color: white;
 }
 .signup-total-container{
@@ -23,10 +23,8 @@
 .signup-inner-container{
     background-color: transparent;
     width:400px;
-    /* margin: 100px; */
     padding: 5px;
     border: 1px solid whitesmoke;
-    /* box-shadow: 5px 5px 5px lightpink; */
 }
 .signup-from{
     display: flex;
@@ -69,7 +67,6 @@
     background-color: green;
 }
 .signup-inner-button:hover{
-    transform: scale(1.1);
     background-color:rgb(63, 157, 63);
 }
 .signup-third{
@@ -113,6 +110,7 @@ label{
 .last-para{
     font-size: 16px;
     font-family: Monoton;
+    color: black;
 }
 @media (max-width:767px) {
     .signup-head{
@@ -122,7 +120,6 @@ label{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-image: linear-gradient(to left,violet,aqua); */
         background-image: url("https://thumbs.dreamstime.com/b/top-view-continental-breakfast-croissants-fried-eggs-orange-juice-coffee-cheese-wooden-background-150876884.jpg");
         background-size: cover;
         height: 100vh;
@@ -130,9 +127,6 @@ label{
     .signup-inner-container{
         background-color: transparent;
         width:300px;
-        /* margin: 100px; */
-        /* padding: 10px; */
-        /* border: 2px solid whitesmoke; */
     }
     .signup-icon{
         height:28px;

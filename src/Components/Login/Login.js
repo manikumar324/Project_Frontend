@@ -120,12 +120,12 @@ const Login = () => {
           <h3 className='login-head'>User Login</h3>
           <div>
             <CiMail className='login-icon'/>
-            <input type='text' placeholder='Email' className='login-inner-one'
+            <input type='text' placeholder='Email' className='login-inner-one' required
             value={mail} name="mail" onChange={getData}/>
           </div>
           <div>
           <CiUnlock className='login-icon'/>
-          <input type='password' placeholder='Password' className='login-inner-one'
+          <input type='password' placeholder='Password' className='login-inner-one' required
           value={password} name="password" onChange={getData}/>
           </div>
           <div className='check-box'>

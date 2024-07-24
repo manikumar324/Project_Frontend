@@ -5,6 +5,8 @@ import { CiLock } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router';
+import { IoArrowBackCircleSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 const UpdatePassword = () => {
@@ -54,9 +56,12 @@ const UpdatePassword = () => {
   return (
     <div>
       <Toaster />
+        <div className='updation-item-container'>
+                  <Link to={"/user-login"}><IoArrowBackCircleSharp className='back-icon'/></Link>
+          </div>
       <div className='pass-total-container'>
       <div className='pass-inner-container'>
-        <form className='pass-from' onSubmit={submitHandler}>
+        <form className='pass-form' onSubmit={submitHandler}>
           <CiLock className='pass-logo'/>
           <h3 className='pass-head'>Change Password</h3>
           {/* <Spinner animation="border" role="dots" size="sm"></Spinner> */}
@@ -67,6 +72,7 @@ const UpdatePassword = () => {
             className='pass-inner-one'
             value={email} 
             name='email' 
+            required
             onChange={checkData}/>
           </div>
           <div>
@@ -76,6 +82,7 @@ const UpdatePassword = () => {
             className='pass-inner-one'
             value={password} 
             name='password' 
+            required
             onChange={checkData}/>
           </div>
           <div>
@@ -84,7 +91,8 @@ const UpdatePassword = () => {
           placeholder='Confirm Password' 
           className='pass-inner-one'
           value={confirmPassword} 
-          name='confirmPassword' 
+          name='confirmPassword'
+          required
           onChange={checkData}/>
           </div>
           <div className='pass-third'>

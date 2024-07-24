@@ -8,6 +8,9 @@ import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import { Toaster } from 'react-hot-toast';
 // import Popup from '../Popup/popup';
 // import ErrorPopup from '../ErrorPopup/ErrorPopup';
 // import NetworkPopup from '../NetworkPopup/NetwokPopup';
@@ -101,17 +104,17 @@ const submitHandler=async (event)=>{
           <h3 className='signup-head'>User Signup</h3>
           <div>
             <IoIosContact className='signup-icon'/>
-            <input type='text' placeholder='Username' className='signup-inner-one'
+            <input type='text' placeholder='Username' className='signup-inner-one' required
             value={name} name='name' onChange={changeHandler} autoComplete='off'/>
           </div>
           <div>
             <CiMail className='signup-icon'/>
-            <input type='email' placeholder='Email' className='signup-inner-one'
+            <input type='email' placeholder='Email' className='signup-inner-one' required
             value={email} name='email' onChange={changeHandler} autoComplete='off'/>
           </div>
           <div>
           <CiUnlock className='signup-icon'/>
-          <input type='password' placeholder='Password' className='signup-inner-one'
+          <input type='password' placeholder='Password' className='signup-inner-one' required
           value={pass} name='pass' onChange={changeHandler}/>
           </div>
           {/* {isLoginFailure && <ErrorPopup />}

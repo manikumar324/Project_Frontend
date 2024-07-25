@@ -143,7 +143,7 @@ const Login = () => {
           <Link to="/user-change-password" className='forgot'>Forgot Your Password ?</Link>
           <div className='last-one'>
             <p className='last-para'>Don't have account ?</p>
-            <Link to="/" className='create-link'>Click to Register</Link>
+            <Link to="/" className='create-link'>Register</Link>
           </div>
         </form>
       </div>

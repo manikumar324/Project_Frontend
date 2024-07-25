@@ -8,8 +8,8 @@ import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import { Toaster } from 'react-hot-toast';
 // import Popup from '../Popup/popup';
 // import ErrorPopup from '../ErrorPopup/ErrorPopup';
@@ -68,21 +68,45 @@ const submitHandler=async (event)=>{
     try{
         const response=await fetch("https://food-project-backend-e69n.onrender.com/signup",options)
         const data=await response.json()
-        if(response.ok === true){
-            console.log(data)
-           setTimeout(()=>{
-            setLoading(false)
-            alert(data.message)
-            navigate("/user-login",{replace:true})
+        if (response.ok) {
+          console.log(data);
+          // setTimeout(() => {
+            toast.success('user Registered Successfully !!', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              transition: Bounce,
+              });
+            setLoading(false);
             setDetails({ name: "", email: "", pass: "" });
-           },1500)
+            setTimeout(()=>{
+              navigate("/user-login", { replace: true });
+            },6000)
+           
+          // }, 1500);
             
             // showSuccessPopup();
             // setLoading(false);
         }
         else{
             setTimeout(()=>{
-              alert(data.message)
+              // alert(data.message)
+              toast.error('User Already Exists !!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
               setLoading(false)
             },1500)
             // showFailurePopup();
@@ -90,10 +114,22 @@ const submitHandler=async (event)=>{
         }
     }
     catch(error){
-        alert(error.message)
+        // alert(error.message)
+        toast.error("Network Error : " + error.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
         console.log("Network Error",error.mesage)
         // showNetworkErrorPopup();
-        // setLoading(false);
+        setLoading(false);
+        setDetails({ name: "", email: "", pass: "" });
     }
 }
   return (
@@ -130,6 +166,7 @@ const submitHandler=async (event)=>{
           </div>
         </form>
       </div>
+      <ToastContainer/>
     </div>
   )
 }

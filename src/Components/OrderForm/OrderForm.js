@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./OrderForm.css";
 import Loader from 'react-loader-spinner';
-import { Toaster,toast } from 'react-hot-toast'; 
+// import { Toaster,toast } from 'react-hot-toast'; 
 import { Link, useNavigate } from 'react-router-dom';
 import { IoArrowBackCircleSharp } from "react-icons/io5";
+import { ToastContainer,toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const OrderForm = () => {
   const navigate=useNavigate();
   const[show,setShow]=useState(false);
@@ -37,8 +40,21 @@ const OrderForm = () => {
   }
 
   const cancelOrder=()=>{
-    // navigate("/recipes/menu-list",{replace:"true"})
-    toast.success("Order Cancel Confirmed")
+    navigate("/recipes/menu-list",{replace:"true"})
+    // toast.success('Order Cancelled Successfully', {
+    //   position: "top-right",
+    //   autoClose: 3000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    //   theme: "colored",
+    //   transition: Bounce,
+    //   });
+    //   setTimeout(()=>{
+    //     setItem({name:"",number:"",address:"",pincode:""})
+    //   },2500)
   }
 
   const submitOrder=async(e)=>{
@@ -69,16 +85,40 @@ const OrderForm = () => {
         setTimeout(()=>{
           navigate("/Home",{return:true})
         },1500)
-      },5000)
+      },6000)
       setItem({name:"",number:"",address:"",pincode:""})
         }
         else{
+          toast.error('Required All Fields', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+            });
           console.log("something is fishy !!")
-          toast.error("All Fields Required !!")
+          
         }
     }
-    
     catch(error){
+      toast.error("Network Error : " + error.message, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+      setTimeout(()=>{
+        setItem({name:"",number:"",address:"",pincode:""})
+      },3500)
       console.log("Network Error",error.message)
     }
   }
@@ -92,7 +132,7 @@ const OrderForm = () => {
       (
         <div>
       <Link to={"/recipes/menu-list"}><IoArrowBackCircleSharp className='back-icon'/></Link>
-      <Toaster />
+      {/* <Toaster /> */}
       {show ? <div className='set-order-success'><img src='https://tpvenue.com/wp-content/uploads/2022/09/02-lottie-tick-01-instant-2.gif' alt='success-gif' className='set-order-size'/>
         <h2 className='order-placed'>Order Placed Succesfully !!</h2></div>:
         <div className='total-order-form-container'>
@@ -100,7 +140,7 @@ const OrderForm = () => {
         <h1 className='order-form-head'>Fastest Delivery</h1>
           <div className='order-form-one'>
             <label htmlFor='name' className='label-name'>Item Name :</label>
-            <select className='form-control' 
+            <select className='form-control' required
             name="name" value={item.name} onChange={handleSelectChange}>
              <option value="">Select Item</option>
             <option value="Egg Dosa">Egg Dosa</option>
@@ -153,6 +193,7 @@ const OrderForm = () => {
             name='number'
             value={item.number}
             placeholder='Mobile Number'
+            required
             onChange={handleInputChange} 
             className='form-control'/>
           </div>
@@ -162,6 +203,7 @@ const OrderForm = () => {
             name='address'
             value={item.address} 
             placeholder='Enter Address'
+            required
             onChange={handleInputChange} 
             className='form-control'/>
           </div>
@@ -171,6 +213,7 @@ const OrderForm = () => {
             name='pincode'
             value={item.pincode} 
             placeholder='Pincode'
+            required
             onChange={handleInputChange} 
             className='form-control'/>
           </div>
@@ -186,6 +229,7 @@ const OrderForm = () => {
     }
     </div>
       )}
+      <ToastContainer />
     </div>
     
   )

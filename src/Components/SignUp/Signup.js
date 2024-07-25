@@ -73,20 +73,20 @@ const submitHandler=async (event)=>{
           // setTimeout(() => {
             toast.success('user Registered Successfully !!', {
               position: "top-right",
-              autoClose: 5000,
+              autoClose: 3000,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,
               draggable: true,
               progress: undefined,
-              theme: "light",
+              theme: "colored",
               transition: Bounce,
               });
             setLoading(false);
             setDetails({ name: "", email: "", pass: "" });
             setTimeout(()=>{
               navigate("/user-login", { replace: true });
-            },6000)
+            },4000)
            
           // }, 1500);
             
@@ -98,13 +98,13 @@ const submitHandler=async (event)=>{
               // alert(data.message)
               toast.error('User Already Exists !!', {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 3000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                theme: "light",
+                theme: "colored",
                 transition: Bounce,
                 });
               setLoading(false)
@@ -117,13 +117,13 @@ const submitHandler=async (event)=>{
         // alert(error.message)
         toast.error("Network Error : " + error.message, {
           position: "top-right",
-          autoClose: 5000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "colored",
+          theme: "light",
           transition: Bounce,
         });
         console.log("Network Error",error.mesage)
